@@ -1,0 +1,80 @@
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #f0f0f0;
+    color: #333333;
+    margin: 15pt;
+}
+
+
+h1 {
+    font-size: 24pt;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20pt;
+    color: #34a853;
+}
+
+h3 {
+    font-size: 18pt;
+    color: #ea4335;
+}
+
+p {
+    font-size: 14pt;
+    color: #555555;
+}
+
+/* Link styles */
+a:link, a:visited {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #ff0000;
+}
+
+/* Table and div styles */
+div.text-wrapper {
+    padding: 10px;
+}
+
+div.link-wrapper {
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14pt;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+/* Wrappers for text and links */
+div.link-wrapper {
+    padding: 5px;
+}
+
+div.text-wrapper {
+    padding: 5px;
+}
