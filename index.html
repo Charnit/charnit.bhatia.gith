@@ -61,15 +61,13 @@
     </section>
 
     <section>
-        <button onclick="getUserName()">Enter Your Name</button>
-        <p id="user-name-display"></p>
+        <button onclick="askUserName()">Enter Your Name</button>
+        <p id="nameDisplay"></p>
     </section>
 
     <section>
         <h2>My Picture</h2>
-        <a href="images/my_picture.jpg" target="_blank">
-            <img src="images/my_picture_thumbnail.jpg" alt="My Picture" onclick="enlargeImage(this)">
-        </a>
+        <img id="profileImage" src="images/my_picture_thumbnail.jpg" alt="My Picture" onclick="toggleImageSize()">
     </section>
 </body>
 </html>
