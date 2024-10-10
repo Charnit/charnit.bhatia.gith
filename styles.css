@@ -29,7 +29,7 @@ p {
     color: #555555;
 }
 
-/* Link styles */
+
 a:link, a:visited {
     color: #007bff;
     text-decoration: none;
@@ -44,7 +44,7 @@ a:active {
     color: #ff0000;
 }
 
-/* Table and div styles */
+
 div.text-wrapper {
     padding: 10px;
 }
@@ -70,7 +70,7 @@ th {
     font-weight: bold;
 }
 
-/* Wrappers for text and links */
+
 div.link-wrapper {
     padding: 5px;
 }

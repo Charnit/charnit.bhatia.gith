@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charnit Bhatia | Home</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <h1>My Education:</h1>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul class="nav-menu">
+                <li onmouseover="hoverEffect(this)" onmouseout="hoverOut(this)">
+                    <a href="index.html">Home</a>
+                </li>
+                <li onmouseover="hoverEffect(this)" onmouseout="hoverOut(this)">
+                    <a href="education.html">Education</a>
+                    <ul class="submenu">
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="awards.html">Awards</a></li>
+                    </ul>
+                </li>
+                <li onmouseover="hoverEffect(this)" onmouseout="hoverOut(this)">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <section>
@@ -40,35 +59,17 @@
             </tr>
         </table>
     </section>
-    
-    
 
     <section>
-        <h2>Courses and Programs</h2>
-        <p>
-            I am currently a fourth-year Business Technology Management student at <a href="https://www.torontomu.ca/" target="_blank">Toronto Metropolitan University</a>. My program blends business and technology, 
-            covering areas like data analytics, information systems, and project management.
-            The most useful course for me was ACC 406. It taught me practical business accounting skills and provided hands-on experience, helping me understand
-            real-world financial decision-making.
-
-        </p>
+        <button onclick="getUserName()">Enter Your Name</button>
+        <p id="user-name-display"></p>
     </section>
 
     <section>
-        <h2>Educational Awards</h2>
-        <ol>
-            <li>Academic Excellence Award</li>
-            <li>Outstanding Leadership Award</li>
-        </ol>
-    </section>
-
-    <section>
-        <h3>Extra-curricular activities</h3>
-        <ol>
-            <li>Captain of the school cricket team</li>
-            <li>Badminton team player</li>
-            <li>Robotics Club </li>
-        </ol>
+        <h2>My Picture</h2>
+        <a href="images/my_picture.jpg" target="_blank">
+            <img src="images/my_picture_thumbnail.jpg" alt="My Picture" onclick="enlargeImage(this)">
+        </a>
     </section>
 </body>
 </html>
