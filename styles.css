@@ -1,80 +1,49 @@
-
-body {
-    font-family: Arial, sans-serif;
-    font-size: 12pt;
-    background-color: #f0f0f0;
-    color: #333333;
-    margin: 15pt;
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
 }
 
-
-h1 {
-    font-size: 24pt;
-    color: #1a73e8;
-    font-weight: bold;
+.nav-menu li {
+    position: relative;
 }
 
-h2 {
-    font-size: 20pt;
-    color: #34a853;
-}
-
-h3 {
-    font-size: 18pt;
-    color: #ea4335;
-}
-
-p {
-    font-size: 14pt;
-    color: #555555;
-}
-
-
-a:link, a:visited {
-    color: #007bff;
+.nav-menu li a {
     text-decoration: none;
-}
-
-a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-a:active {
-    color: #ff0000;
-}
-
-
-div.text-wrapper {
     padding: 10px;
+    display: block;
+    color: #333;
 }
 
-div.link-wrapper {
-    padding: 10px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 14pt;
-}
-
-th, td {
-    padding: 10px;
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
     border: 1px solid #ddd;
-    text-align: left;
 }
 
-th {
-    font-weight: bold;
+.nav-menu li:hover .submenu {
+    display: block;
 }
 
-
-div.link-wrapper {
-    padding: 5px;
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 14pt;
+    border-radius: 5px;
 }
 
-div.text-wrapper {
-    padding: 5px;
+button:hover {
+    background-color: #0056b3;
 }

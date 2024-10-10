@@ -1,22 +1,12 @@
-
-function getUserName() {
-    const name = prompt("Please enter your name:");
+function askUserName() {
+    let name = prompt("Welcome! What is your name?"); 
     if (name) {
-        document.getElementById("user-name-display").textContent = "Hello, " + name + "!";
+        let nameDisplay = document.getElementById('nameDisplay');
+        nameDisplay.innerHTML = "Hey, " + name + "! Welcome to my website. Feel free to reach out if you have any questions by clicking <a href='contact.html'>here</a>!";
     }
 }
 
-
-function enlargeImage(imageElement) {
-    const newWindow = window.open(imageElement.parentNode.href, '_blank');
-    newWindow.focus();
-}
-
-
-function hoverEffect(element) {
-    element.style.backgroundColor = "#f0f0f0";
-}
-
-function hoverOut(element) {
-    element.style.backgroundColor = "transparent";
+function toggleImageSize() {
+    var img = document.getElementById('profileImage');
+    img.classList.toggle('enlarged');
 }
