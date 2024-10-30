@@ -13,7 +13,11 @@ window.onload = function() {
         // Get selected gender
         const gender = document.querySelector('input[name="gender"]:checked')?.value || 'Not specified';
 
-        // Get selected interests from checkboxes
+       // Get selected interests from checkboxes
+       // Collect all checked checkboxes with the name "interests" into an array
+       // Use querySelectorAll to select all matching checkboxes
+       // Convert the NodeList into an array using Array.from()
+       // Use the .map() method to extract the value of each checked checkbox
         const interests = Array.from(document.querySelectorAll('input[name="interests"]:checked'))
             .map(el => el.value);
 
