@@ -1,110 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charnit Bhatia | Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="public_html/js/main.js" defer></script>
-    <!-- Inline comments to explain JavaScript usage -->
+    
+<meta charset="UTF-8">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charnit Bhatia | Home</title>
+    
+<link rel="stylesheet" href="styles.css">
+    
+<script src="public_html/js/main.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <h1>My Education and Contact Form</h1>
-        <!-- Navigation Menu -->
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="education.html">Education</a>
-                    <ul class="submenu">
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="awards.html">Awards</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section>
-        <h2>Education</h2>
-        <table>
-            <tr>
-                <th>Institution</th>
-                <th>Duration</th>
-            </tr>
-            <tr>
-                <td><a href="https://www.vv.tagoreint.com/" target="_blank">Tagore International School</a></td>
-                <td>2017 - 2021</td>
-            </tr>
-            <tr>
-                <td><a href="https://torontomu.ca" target="_blank">Toronto Metropolitan University</a></td>
-                <td>2021 - 2025</td>
-            </tr>
-        </table>
-    </section>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">MyPortfolio</a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </header>
 
-    <!-- Contact Form -->
-    <section>
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+    <header class="hero-header">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a passionate developer, designer, and tech enthusiast on a mission to create impactful digital experiences.</p>
+            <a href="#projects" class="cta-button">Explore My Work</a>
+        </div>
+    </header>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+    <section class="about-me">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1542452376175-82b6fb643412?q=80&w=2801&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Your Photo">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Hi! I’m [Your Name], a passionate developer and designer. I love creating impactful digital experiences that solve real-world problems. With a background in [Your Field/Studies], I focus on bringing simplicity, creativity, and functionality to each project I take on.</p>
+                <div class="highlights">
+                    <p><strong>Location:</strong> Oak Ridges, Ontario</p>
+                    <p><strong>Interests:</strong> AI, web development, travel, and cars</p>
+                    <p><strong>Fun Fact:</strong> I’ve traveled to 12 states and 5 countries!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+    <section class="education-section">
+        <h2>Education</h2>
+        <div class="education-cards">
+            <div class="education-card">
+                <h3>Toronto Metropolitan University</h3>
+                <p class="degree">Bachelor of Business Technology Management</p>
+                <p class="years">2021 - 2025</p>
+                <p class="description">Specializing in technology management, project planning, and systems analysis, with a focus on bridging the gap between business and technology.</p>
+            </div>
+            <div class="education-card">
+                <h3>York University</h3>
+                <p class="degree">Bachelor of Information Technology</p>
+                <p class="years">2020 - 2021</p>
+                <p class="description">Completed foundational courses in computer science, database management, and networking before transferring to Toronto Metropolitan University.</p>
+            </div>
+        </div>
+    </section>
+    
 
-            <label for="gender">Gender:</label>
-            <input type="radio" name="gender" value="Male"> Male
-            <input type="radio" name="gender" value="Female"> Female<br><br>
-
-            <label>Hobbies:</label>
-            <input type="checkbox" name="hobby" value="Reading"> Reading
-            <input type="checkbox" name="hobby" value="Sports"> Sports<br><br>
-
-            <label for="favColor">Favorite Color:</label>
-            <input type="color" id="favColor" name="favColor"><br><br>
-
-            <input type="submit" value="Submit">
-            <input type="reset" value="Clear">
-        </form>
-    </section>
-
-    <script>
-        // Store form data in localStorage on submit
-        document.getElementById('contactForm').onsubmit = function(event) {
-            event.preventDefault(); // Prevent page reload
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            const gender = document.querySelector('input[name="gender"]:checked').value;
-            const hobbies = Array.from(document.querySelectorAll('input[name="hobby"]:checked')).map(el => el.value);
-            const favColor = document.getElementById('favColor').value;
-
-            const formData = {
-                name,
-                email,
-                message,
-                gender,
-                hobbies,
-                favColor
-            };
-
-            localStorage.setItem('contactData', JSON.stringify(formData));
-            alert('Form data saved!');
-        };
-
-        // Optional: Retrieve stored data
-        console.log(JSON.parse(localStorage.getItem('contactData')));
-    </script>
-
-    <section>
-        <h2>My Picture</h2>
-        <img id="profileImage" src="public_html/IMG_7070.JPG" alt="My Picture" onclick="toggleImageSize()">
-    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="#">MyPortfolio</a>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+                <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Charnit Bhatia. All rights reserved.</p>
+        </div>
+    </footer>
+    
 </body>
+
 </html>

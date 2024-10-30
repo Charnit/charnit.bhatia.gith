@@ -1,39 +1,4 @@
-.nav-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 15px;
-}
 
-.nav-menu li {
-    position: relative;
-}
-
-.nav-menu li a {
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-    color: #333;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: #fff;
-    border: 1px solid #ddd;
-}
-
-.nav-menu li:hover .submenu {
-    display: block;
-}
-
-/* Button Styling */
 button {
     padding: 10px 20px;
     background-color: #1a73e8;
@@ -46,4 +11,285 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+
+ */
+
+
+ /* nav */
+.header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #f2f2f2;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.hero-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover; /* Replace with your background image */
+    color: #ffffff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-header p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+/* header */
+.hero-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover; /* Replace with your background image */
+    color: #ffffff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.hero-header p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+
+.education-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.education-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.education-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+
+.education-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    flex: 1 1 300px; /* Ensures each card takes up the same width */
+    text-align: left;
+}
+
+.education-card h3 {
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin-bottom: 8px;
+}
+
+.degree, .years {
+    font-size: 1rem;
+    color: #666;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 10px;
+}
+
+
+.about-me {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+}
+
+.about-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.highlights p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.highlights strong {
+    color: #007BFF;
+}
+
+
+.site-footer {
+    background-color: #333;
+    color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-logo a {
+    font-size: 1.5rem;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links, .footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a, .footer-social a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+    color: #007BFF;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #bbb;
 }
