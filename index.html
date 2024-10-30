@@ -2,142 +2,163 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charnit Bhatia | Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="public_html/js/main.js" defer></script>
+    <!-- Meta information for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>Charnit Bhatia | Home</title>
+    
+    <!-- Linking external CSS for styling -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- JavaScript files for interactivity and functionality -->
+    <script src="public_html/js/main.js" defer></script>
+    <script src="public_html/js/contact.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="#" class="logo">MyPortfolio</a>
-            <nav class="nav">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <a href="#contact" class="cta-button">Get in Touch</a>
-        </div>
-    </header>
 
-    <header class="hero-header">
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>I'm a passionate developer, designer, and tech enthusiast on a mission to create impactful digital experiences.</p>
-            <a href="#projects" class="cta-button">Explore My Work</a>
-        </div>
-    </header>
+    <!-- Header section containing logo, navigation menu, and a call-to-action button -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Charnit Bhatia</a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#edu">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </header>
 
-    <section class="about-me" id="about">
-        <div class="about-container">
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1542452376175-82b6fb643412?q=80&w=2801&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Your Photo">
-            </div>
-            <div class="about-content">
-                <h2>About Me</h2>
-                <p>Hi! I’m [Your Name], a passionate developer and designer. I love creating impactful digital experiences that solve real-world problems.</p>
-            </div>
-        </div>
-    </section>
+    <!-- Hero section: Introduction with a brief overview and a call-to-action button -->
+    <header class="hero-header">
+        <div class="hero-content">
+            <h1>Welcome to my website, I'm Charnit Bhatia</h1>
+            <p>I'm a passionate developer, designer, and tech enthusiast on a mission to create impactful digital
+                experiences.</p>
+            <a href="#projects" class="cta-button">Explore My Work</a>
+        </div>
+    </header>
 
-    <section class="education-section">
-        <h2>Education</h2>
-        <div class="education-cards">
-            <div class="education-card">
-                <h3>Toronto Metropolitan University</h3>
-                <p class="degree">Bachelor of Business Technology Management</p>
-                <p class="years">2021 - 2025</p>
-            </div>
-            <div class="education-card">
-                <h3>York University</h3>
-                <p class="degree">Bachelor of Information Technology</p>
-                <p class="years">2020 - 2021</p>
-            </div>
-        </div>
-    </section>
+    <!-- About Me section with a brief bio and personal highlights -->
+    <section class="about-me" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="public_html/IMG_7070.JPG" alt="Your Photo">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Hi! I’m Charnit Bhatia, a tech-focused professional pursuing a Bachelor’s in Business Technology Management 
+                    at Toronto Metropolitan University. I’m passionate about combining technology and business to create impactful 
+                    solutions. With professional experience and some tech projects, 
+                    I excel in customer relations, problem-solving, and AI-driven innovations.</p>
+                <div class="highlights">
+                    <p><strong>Location:</strong> Toronto, Ontario</p>
+                    <p><strong>Interests:</strong> AI, web development, travel, and cars</p>
+                    <p><strong>Fun Fact:</strong> I’ve traveled to 12 states and 5 countries!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Contact Form Section -->
-    <section id="contact" class="contact-form-section">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+    <!-- Education section showcasing academic background -->
+    <section class="education-section" id="edu">
+        <h2>Education</h2>
+        <div class="education-cards">
+            <div class="education-card">
+                <h3>Toronto Metropolitan University</h3>
+                <p class="degree">Bachelor of Business Technology Management</p>
+                <p class="years">2021 - 2025</p>
+                <p class="description">Specializing in technology management, project planning, and systems analysis,
+                    with a focus on bridging the gap between business and technology.</p>
+            </div>
+            <div class="education-card">
+                <h3>Tagore International School</h3>
+                <p class="degree">High School : Commerce with Maths</p>
+                <p class="years">Till 2021</p>
+                <p class="description">Built a strong foundation in commerce with mathematics while also completing 
+                    introductory courses in computer science, database management, and networking. </p>
+            </div>
+        </div>
+    </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+    <!-- Contact Form section allowing users to get in touch -->
+    <section class="contact-form" id="contact">
+        <h2>Get in Touch</h2>
+        <form id="contactForm">
+            <!-- Input field for name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <!-- Input field for email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
 
-            <label for="gender">Gender:</label>
-            <input type="radio" name="gender" value="Male"> Male
-            <input type="radio" name="gender" value="Female"> Female<br><br>
+            <!-- Input field for phone number -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
 
-            <label>Hobbies:</label>
-            <input type="checkbox" name="hobby" value="Reading"> Reading
-            <input type="checkbox" name="hobby" value="Sports"> Sports<br><br>
+            <!-- Dropdown select for the subject of the message -->
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="project">Project Proposal</option>
+                <option value="feedback">Feedback</option>
+            </select>
 
-            <label for="favColor">Favorite Color:</label>
-            <input type="color" id="favColor" name="favColor"><br><br>
+            <!-- Radio buttons for gender selection -->
+            <label>Gender:</label>
+            <div class="radio-options">
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
 
-            <input type="submit" value="Submit">
-            <input type="reset" value="Clear">
-        </form>
-    </section>
+            <!-- Checkbox inputs for selecting interests -->
+            <label>Interests:</label>
+            <input type="checkbox" name="interests" value="AI"> AI
+            <input type="checkbox" name="interests" value="Web Development"> Web Development
+            <input type="checkbox" name="interests" value="Travel"> Travel
 
-    <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <a href="#">MyPortfolio</a>
-            </div>
-            <div class="footer-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#blog">Blog</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="footer-social">
-                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
-                <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Charnit Bhatia. All rights reserved.</p>
-        </div>
-    </footer>
+            <!-- Textarea for entering the message -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message here"></textarea>
 
-    <script>
-        // Store form data in localStorage on submit
-        document.getElementById('contactForm').onsubmit = function(event) {
-            event.preventDefault(); // Prevent page reload
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            const gender = document.querySelector('input[name="gender"]:checked').value;
-            const hobbies = Array.from(document.querySelectorAll('input[name="hobby"]:checked')).map(el => el.value);
-            const favColor = document.getElementById('favColor').value;
+            <!-- Submit and Reset buttons for the form -->
+            <div class="button-group">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+    </section>
 
-            const formData = {
-                name,
-                email,
-                message,
-                gender,
-                hobbies,
-                favColor
-            };
+    <!-- Footer section containing site links and copyright information -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="#">Charnit Bhatia</a>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#edu">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Charnit Bhatia. All rights reserved.</p>
+        </div>
+    </footer>
 
-            localStorage.setItem('contactData', JSON.stringify(formData));
-            alert('Form data saved!');
-        };
-
-        // Optional: Retrieve stored data
-        console.log(JSON.parse(localStorage.getItem('contactData')));
-    </script>
 </body>
+
 </html>

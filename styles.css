@@ -1,4 +1,5 @@
 
+/* Button Styling */
 button {
     padding: 10px 20px;
     background-color: #1a73e8;
@@ -134,6 +135,7 @@ button:hover {
     font-size: 1.25rem;
     margin-bottom: 30px;
     line-height: 1.6;
+    color: black;
 }
 
 .cta-button {
@@ -292,4 +294,132 @@ button:hover {
     margin-top: 20px;
     font-size: 0.9rem;
     color: #bbb;
+}
+
+
+/* Contact Form Styling */
+.contact-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Improved Radio Button Styling */
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+.contact-form input, 
+.contact-form textarea, 
+.contact-form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    outline: none;
+    border-color: #0078d4;
+    box-shadow: 0 0 8px rgba(0, 120, 212, 0.3);
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.contact-form .button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form input[type="submit"],
+.contact-form input[type="reset"] {
+    width: 48%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #0078d4;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #005bb5;
+}
+
+.contact-form input[type="reset"] {
+    background-color: #d32f2f;
+}
+
+.contact-form input[type="reset"]:hover {
+    background-color: #b71c1c;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form .button-group {
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .contact-form .button-group {
+        flex-direction: column;
+    }
+
+    .contact-form input[type="submit"],
+    .contact-form input[type="reset"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.contact-form .radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-form .radio-group input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.2); /* Makes the radio button larger */
+    accent-color: #0078d4; /* Modern color styling for radio buttons */
+}
+
+.contact-form .radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
