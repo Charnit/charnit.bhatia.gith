@@ -1,4 +1,5 @@
 function askUserName() {
+   
     let name = prompt("Welcome! What is your name?"); 
     if (name) {
         let nameDisplay = document.getElementById('nameDisplay');
