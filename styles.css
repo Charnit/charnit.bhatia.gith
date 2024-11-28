@@ -528,3 +528,68 @@ button:hover {
     color: #555;
     margin-top: 5px;
 }
+
+
+/* SEO and SMO Report Section */
+.seo-smo-techniques {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Instagram Icon Link */
+.footer-content a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content a i {
+    color: #E1306C; /* Instagram's brand color */
+}
+
+/* SEO and SMO Techniques Section */
+.seo-smo-techniques {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif; /* Ensure consistent font family */
+    font-size: 1rem; /* Standard font size */
+    line-height: 1.6; /* Consistent line spacing */
+    color: #333;
+}
+
+/* Headings in SEO Section */
+.seo-smo-techniques h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-family: 'Arial', sans-serif; /* Match font family */
+    font-weight: bold; /* Ensure consistent heading weight */
+}
+
+/* Paragraph Styling */
+.seo-smo-techniques p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+    font-family: 'Arial', sans-serif; /* Match font family */
+}
+
+/* Citation Styling */
+.seo-smo-techniques p cite {
+    font-style: italic;
+    color: #888;
+}
+
